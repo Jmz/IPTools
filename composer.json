@@ -1,0 +1,11 @@
+{
+    "name": "jmz/ip-tools",
+    "description": "Library for working with IP addresses",
+    "authors": [
+        {
+            "name": "James Owers",
+            "email": "jamesowers@gmail.com"
+        }
+    ],
+    "require": {}
+}
