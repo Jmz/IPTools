@@ -54,7 +54,7 @@ class IpTools implements IpValidator
      * @param $endIp
      * @return bool
      */
-    public static function validateIp4Range($startIp, $endIp)
+    public static function validateIpv4Range($startIp, $endIp)
     {
         if (self::validateIpV4($startIp) && self::validateIpV4($endIp)) {
 
