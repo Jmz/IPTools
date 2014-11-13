@@ -47,5 +47,23 @@ class IpTools implements IpValidator
         return false;
     }
 
+    /**
+     * Checks whether the two IPv4 addresses can be a valid range.
+     *
+     * @param $startIp
+     * @param $endIp
+     * @return bool
+     */
+    public static function validateIp4Range($startIp, $endIp)
+    {
+        if (self::validateIpV4($startIp) && self::validateIpV4($endIp)) {
 
+            if (ip2long($startIp) < ip2long($endIp)) {
+                return true;
+            }
+
+        }
+
+        return false;
+    }
 }
